@@ -1,0 +1,98 @@
+:root {
+  --peopleshadow1: rgba(0, 0, 0, 0.12);
+  --peopleshadow2: rgba(0, 0, 0, 0.14);
+  --peopleshadow3: rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: Miso;
+  src: url(./fonts/miso.otf);
+}
+
+@font-face {
+  font-family: MisoBold;
+  src: url(./fonts/miso-bold.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(./fonts/lato.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+section {
+  background-color: yellow;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 1px 3px var(--peopleshadow1), 0px 1px 1px var(--peopleshadow2),
+    0px 2px 1px var(--peopleshadow3);
+  border-radius: 5px;
+}
+.card:hover {
+  height: 500px;
+  cursor: pointer;
+}
+.price {
+  color: green;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: MisoBold, sans-serif;
+}
+.title {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: Miso, sans-serif;
+  color: rgb(130, 109, 109);
+  margin-top: 30px;
+}
+.description {
+  color: rgb(130, 109, 109);
+  width: 130px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.cup_bean {
+  margin-top: 20px;
+  background-image: url('./images/cup-bronze.png');
+  width: 135px;
+  height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cup_bean_gold {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/cup-gold.png');
+  width: 135px;
+  height: 77px;
+}
+.cup_bean_silver {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/cup-silver.png');
+  width: 135px;
+  height: 77px;
+}
+.bean{
+  padding-right: 15px;
+}
