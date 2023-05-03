@@ -33,6 +33,7 @@ section {
 }
 .card {
   background-color: white;
+  transition: all 0.6s;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,7 +45,7 @@ section {
   border-radius: 5px;
 }
 .card:hover {
-  height: 500px;
+  transform: scale(1.1);
   cursor: pointer;
 }
 .price {
